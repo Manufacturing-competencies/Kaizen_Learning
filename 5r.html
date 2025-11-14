@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Program 5R – Dashboard</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Global & 5R Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-5r.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar mini-nav" role="navigation" aria-label="Navigasi utama">
+    <button
+      class="logo"
+      type="button"
+      onclick="window.location.href='index.html'"
+      aria-label="Kembali ke Dashboard"
+    >
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+      <span>Dashboard</span>
+    </button>
+
+    <ul class="nav-links" id="mainNav">
+      <li>
+        <a href="index.html#kontak">
+          <i class="fa-solid fa-address-book"></i>
+          Kontak
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Buka menu"
+      aria-controls="mainNav"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <!-- HERO KHUSUS 5R -->
+  <section class="hero hero-5r" aria-labelledby="hero-title">
+    <h1 class="hero-title" id="hero-title">PROGRAM 5R</h1>
+  </section>
+
+  <main>
+    <!-- KONTEN UTAMA 5R -->
+    <section class="content" aria-labelledby="p5r-main-title">
+      <h2 id="p5r-main-title">Langkah Implementasi 5R</h2>
+
+      <div class="page-5r-grid">
+        <!-- LIST LANGKAH 5R -->
+        <div class="page-5r-text">
+          <ol>
+            <li><strong>Ringkas</strong> – Pilah dan pisahkan barang yang tidak diperlukan di area kerja.</li>
+            <li><strong>Rapi</strong> – Tata barang di area kerja agar mudah dicari dan digunakan.</li>
+            <li><strong>Resik</strong> – Jaga kebersihan area kerja melalui pembersihan rutin.</li>
+            <li><strong>Rawat</strong> – Pelihara kondisi ringkas, rapi, dan resik dengan pengecekan berkala.</li>
+            <li><strong>Rajin</strong> – Jadikan 5R sebagai kebiasaan setiap hari, bukan hanya saat audit.</li>
+          </ol>
+        </div>
+
+        <!-- DOKUMENTASI 5R -->
+        <div class="page-5r-media">
+          <h3>Dokumentasi Kegiatan 5R</h3>
+          <img
+            src="Dokumentasi 5R.png"
+            alt="Kegiatan aktivitas 5R di area kerja"
+            class="page-5r-img"
+          />
+          <p><em>Kegiatan aktivitas 5R di area kerja.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBMIT DOKUMENTASI 5R -->
+    <section class="page-5r-submit content" aria-labelledby="p5r-submit-title">
+      <h2 id="p5r-submit-title" class="p5r-h2">Submit Dokumentasi 5R</h2>
+
+      <!-- A. TOMBOL CEPAT KE GOOGLE FORM (buka tab baru) -->
+      <div class="p5r-form-grid" role="group" aria-label="Link cepat Google Form">
+        <a
+          class="p5r-btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdIV43Hr6rGqzMJ6kJGgWHNU7zQNi-BtxdRefx3vuzXdpMu-Q/viewform"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buka Form Office"
+        >
+          <i class="fa-solid fa-building" aria-hidden="true"></i>
+          Office
+        </a>
+
+        <a
+          class="p5r-btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScaZ9JuOPYVuIhT2jmDnFN0SLoPw161VEJXIm3Nbsq54QL3XA/viewform"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buka Form Workshop"
+        >
+          <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+          Workshop
+        </a>
+
+        <a
+          class="p5r-btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScsGd-mK71RXBwtShG1NibPbvipwN2HnosTkVtYSRAXZxkaBw/viewform"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buka Form Fasum"
+        >
+          <i class="fa-solid fa-city" aria-hidden="true"></i>
+          Fasum
+        </a>
+
+        <a
+          class="p5r-btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeoaW4NsvZERvG7BdUOybPReNVF_pIE7vbprAkg1KsdTIWTbA/viewform"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buka Form Gudang"
+        >
+          <i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i>
+          Gudang
+        </a>
+
+        <a
+          class="p5r-btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdbqIH2IChmFVgbf8M0REpdaGDGFRCX_cLL4qipox0HLfVwUw/viewform"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buka Form Produksi"
+        >
+          <i class="fa-solid fa-industry" aria-hidden="true"></i>
+          Produksi
+        </a>
+
+        <a
+          class="p5r-btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdEw9K2v4iw1ZIrZK8rtxroODayrCW4DfpRqusF5ATwAk6ukw/viewform"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buka Form Lab"
+        >
+          <i class="fa-solid fa-flask" aria-hidden="true"></i>
+          Lab
+        </a>
+      </div>
+
+      <!-- STICKY BAR di atas rekap sheet -->
+      <div class="sheet-sticky">
+        <div class="sticky-left">
+          <button
+            type="button"
+            class="badge badge-sudah badge-btn"
+            data-type="sudah"
+          >
+            Sudah
+            <sup class="badge-count" id="count-sudah">0</sup>
+          </button>
+
+          <button
+            type="button"
+            class="badge badge-belum badge-btn"
+            data-type="belum"
+          >
+            Belum
+            <sup class="badge-count" id="count-belum">0</sup>
+          </button>
+        </div>
+
+        <div class="sticky-mid">
+          <strong id="p5r-week">W46</strong>
+          <span id="p5r-date">Wednesday, November 12</span>
+        </div>
+
+        <div class="sticky-right">
+          <span class="trend-label">Tren 5 pekan terakhir</span>
+          <span class="trend-last">W44</span>
+          <span class="trend-score">87</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- REKAP SUBMIT 5R (LIVE) -->
+    <section class="page-5r-recap content" aria-labelledby="p5r-recap-title">
+      <h2 id="p5r-recap-title" class="p5r-h2">Rekap Submit 5R (Live)</h2>
+
+      <!-- Catatan izin -->
+      <p class="p5r-note">
+        *Tampilan live. Silakan cek progres submitted 5R kamu dan pastikan areamu sudah submitted, ya.*
+      </p>
+
+      <div class="sheet-wrapper">
+        <iframe
+          title="Rekap Submit 5R"
+          src="https://docs.google.com/spreadsheets/d/1rB3Qd8CLNpEpl4fVKMVGDcUP8toQie0Vh6h5wLeCWyU/pubhtml?gid=1845816717&single=true&widget=true&headers=false&range=1:137">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

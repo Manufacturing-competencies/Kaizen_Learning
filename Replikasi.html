@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Program Replikasi Improvement</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Global & Improvement style -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-Replikasi.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar mini-nav" role="navigation" aria-label="Navigasi utama">
+    <button class="logo" type="button" onclick="window.location.href='index.html'" aria-label="Kembali ke Dashboard">
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+      <span>Dashboard</span>
+    </button>
+
+    <ul class="nav-links" id="mainNav">
+      <li>
+        <a href="index.html#kontak">
+          <i class="fa-solid fa-address-book"></i> Kontak
+        </a>
+      </li>
+    </ul>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="mainNav" aria-expanded="false">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ================================
+         1. REPLIKASI IMPROVEMENT
+    ================================= -->
+    <section class="content ss-replikasi" id="replikasi-improvement">
+      <h2 class="ss-title">Replikasi Improvement</h2>
+
+      <p class="ss-desc">
+        <strong>Replikasi Improvement</strong> adalah penerapan kembali ide atau solusi
+        yang sudah terbukti efektif di satu area, kemudian diaplikasikan ke area lain
+        yang memiliki permasalahan sejenis. Tujuannya agar dampak perbaikan menjadi
+        lebih luas, terukur, dan konsisten di seluruh area kerja.
+      </p>
+
+      <!-- BLOK 1: KONSEP & MANFAAT -->
+      <div class="ss-replikasi-grid">
+        <!-- Kiri: konsep & definisi -->
+        <article class="ss-repl-card">
+          <h3><i class="fa-solid fa-diagram-project"></i> Konsep Replikasi</h3>
+          <ul class="ss-repl-list">
+            <li>Diambil dari <strong>improvement yang sudah berjalan baik dari Quality Improvement Team &amp; Sumbang Saran</strong>.</li>
+            <li>Diterapkan pada <strong>area lain dengan masalah dan spesifikasi area yang sama</strong>.</li>
+          </ul>
+        </article>
+
+        <!-- Kanan: manfaat replikasi -->
+        <article class="ss-repl-card soft">
+          <h3><i class="fa-solid fa-ranking-star"></i> Manfaat Replikasi</h3>
+          <ul class="ss-repl-list">
+            <li>Meningkatkan <strong>kecepatan perbaikan</strong> di banyak area sekaligus.</li>
+            <li>Memaksimalkan <strong>hasil ide SS / QIT</strong> yang sudah terbukti efektif.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- BLOK 2: KRITERIA IMPROVEMENT YANG LAYAK DIREPLIKASI -->
+      <div class="ss-repl-criteria">
+        <h3><i class="fa-solid fa-list-check"></i> Kriteria Improvement yang Layak Direplikasi</h3>
+        <div class="ss-repl-criteria-grid">
+          <div class="ss-repl-chip">
+            <span class="chip-label">Terbukti Efektif</span>
+            <p>Hasil improvement sudah menunjukkan perbaikan (data sebelum–sesudah jelas).</p>
+          </div>
+          <div class="ss-repl-chip">
+            <span class="chip-label">Masalah Serupa</span>
+            <p>Area lain memiliki jenis masalah, alur proses, atau risiko yang mirip.</p>
+          </div>
+          <div class="ss-repl-chip">
+            <span class="chip-label">Layak Diterapkan</span>
+            <p>Tidak membutuhkan perubahan besar yang di luar kewenangan area.</p>
+          </div>
+          <div class="ss-repl-chip">
+            <span class="chip-label">Standar Jelas</span>
+            <p>Memiliki panduan / standar kerja yang mudah direplikasi dan dilatih.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOK 3: LANGKAH REPLIKASI IMPROVEMENT -->
+      <div class="ss-repl-steps">
+        <h3><i class="fa-solid fa-person-running"></i> Langkah Replikasi Improvement</h3>
+
+        <div class="ss-repl-steps-grid">
+          <article class="ss-repl-step">
+            <div class="step-badge">1</div>
+            <h4>Identifikasi Improvement</h4>
+            <p>Improvement yang sudah selesai dan telah diimplementasikan baik dari Quality Improvement Team (QIT) &amp; Sumbang Saran (SS) yang sudah terbukti.</p>
+          </article>
+
+          <article class="ss-repl-step">
+            <div class="step-badge">2</div>
+            <h4>Genba Sumber Improvement ke Area</h4>
+            <p>Cek detail, manfaat, tujuan, dan dampak improvement yang telah terimplementasi bersama PIC Improvement ke area.</p>
+          </article>
+
+          <article class="ss-repl-step">
+            <div class="step-badge">3</div>
+            <h4>Tentukan Area Replikasi</h4>
+            <p>Mapping area / line lain yang punya permasalahan serupa atau area yang memiliki spesifikasi yang sama.</p>
+          </article>
+
+          <article class="ss-repl-step">
+            <div class="step-badge">4</div>
+            <h4>Diskusi dengan PIC &amp; Superior</h4>
+            <p>Koordinasi dengan PIC area awal, PIC area target, dan Superior &amp; Head Of Departement terkait scope replikasi improvement.</p>
+          </article>
+
+          <article class="ss-repl-step">
+            <div class="step-badge">5</div>
+            <h4>Sesuaikan Desain / Metode</h4>
+            <p>Jika diperlukan, lakukan penyesuaian kecil (dimensi, layout, metode kerja) agar cocok dengan area baru.</p>
+          </article>
+
+          <article class="ss-repl-step">
+            <div class="step-badge">6</div>
+            <h4>Implementasi &amp; Uji Coba</h4>
+            <p>Lakukan pemasangan / perubahan proses, uji coba, dan pastikan berjalan aman serta stabil.</p>
+          </article>
+
+          <article class="ss-repl-step">
+            <div class="step-badge">7</div>
+            <h4>Dokumentasi &amp; Pelaporan</h4>
+            <p>Update data replikasi (lokasi, line, tanggal, foto sebelum–sesudah) dan laporkan kepada Superior dan Head Of Departement terkait.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         2. MATRIKS STATUS & KRITERIA
+    ================================= -->
+    <section class="content ss-repl-matrix-v2" id="repl-matrix">
+      <h3 class="ss-repl-matrix-title">
+        Matriks Status dan Kriteria Replikasi Improvement
+      </h3>
+
+      <div class="ss-repl-matrix-grid">
+
+        <!-- Approved -->
+        <article class="repl-col approved">
+          <div class="matrix-header">Approved</div>
+
+          <div class="matrix-box">
+            <p>Hasil identifikasi: <strong>"bisa" direplikasi</strong> dari MCS &amp; hasil review &amp; genba.</p>
+          </div>
+          <div class="matrix-box">
+            <p>Disetujui oleh user (Leader, Section Head, &amp; HOD).</p>
+          </div>
+
+          <div class="matrix-footer">
+            Kedua kriteria wajib dipenuhi
+          </div>
+        </article>
+
+        <!-- Not Approved -->
+        <article class="repl-col not-approved">
+          <div class="matrix-header">Not Approved</div>
+
+          <div class="matrix-box">
+            <p>Hasil identifikasi: <strong>"tidak bisa" direplikasi</strong> dari MCS &amp; hasil review &amp; genba.</p>
+          </div>
+          <div class="matrix-box">
+            <p>Tidak disetujui oleh user (Leader, Section Head, &amp; HOD).</p>
+          </div>
+
+          <div class="matrix-footer">
+            Jika salah satu tidak terpenuhi → status <strong>Not Approved</strong>
+          </div>
+        </article>
+
+        <!-- Under Review -->
+        <article class="repl-col under-review">
+          <div class="matrix-header">Under Review</div>
+
+          <div class="matrix-box">
+            <p>Identifikasi masih berlangsung / <em>on progress</em>.</p>
+          </div>
+          <div class="matrix-box">
+            <p>User belum memberikan persetujuan atas rencana replikasi.</p>
+          </div>
+
+          <div class="matrix-footer">
+            Status sementara sebelum ada keputusan final
+          </div>
+        </article>
+
+        <!-- Implemented -->
+        <article class="repl-col implemented">
+          <div class="matrix-header">Implemented</div>
+
+          <div class="matrix-box">
+            <p>Hasil replikasi telah disetujui user.</p>
+          </div>
+          <div class="matrix-box">
+            <p>Perubahan standar telah disosialisasikan.</p>
+          </div>
+
+          <div class="matrix-footer">
+            Kedua kriteria wajib dipenuhi
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================================
+         3. BUKU HISTORY REPLIKASI
+    ================================= -->
+    <section class="content history-repl" id="history-replikasi">
+      <h2 class="ss-title">History Replikasi Improvement</h2>
+
+      <p class="ss-desc">
+        Halaman ini berisi rangkuman Paragonian yang berhasil <strong>Replikasi Improvement</strong>
+        di berbagai area. 
+      </p>
+
+      <div class="history-book">
+        <div class="history-page-wrapper">
+
+          <!-- HALAMAN 1 -->
+          <article class="history-page active" data-page="1">
+            <div class="history-image">
+              <img src="1.png" alt="Replikasi Improvement 1">
+            </div>
+            <div class="history-text">
+              <h3>Replikasi Improvement Tim Explore - Batch 7</h3>
+            </div>
+          </article>
+
+          <!-- HALAMAN 2 -->
+          <article class="history-page" data-page="2">
+            <div class="history-image">
+              <img src="2.png" alt="Replikasi Improvement 2">
+            </div>
+            <div class="history-text">
+              <h3>Replikasi Improvement Tim Hashira - Batch 7</h3>
+            </div>
+          </article>
+
+          <!-- HALAMAN 3 -->
+          <article class="history-page" data-page="3">
+            <div class="history-image">
+              <img src="3.png" alt="Replikasi Improvement 3">
+            </div>
+            <div class="history-text">
+              <h3>Replikasi Improvement Tim Fearless Pioneers - Batch 7</h3>
+            </div>
+          </article>
+
+          <!-- HALAMAN 4 -->
+<article class="history-page" data-page="4">  <!-- <= ganti jadi 4 -->
+  <div class="history-image">
+    <img src="4.png" alt="Replikasi Improvement 4">
+  </div>
+  <div class="history-text">
+    <h3>Replikasi Improvement Sumbang Saran</h3>
+  </div>
+</article>
+
+
+        <!-- NAVIGASI HALAMAN -->
+        <div class="history-nav" aria-label="Pilih halaman history">
+          <button class="history-nav-btn active" data-target="1">Halaman 1</button>
+          <button class="history-nav-btn" data-target="2">Halaman 2</button>
+          <button class="history-nav-btn" data-target="3">Halaman 3</button>
+          <button class="history-nav-btn" data-target="4">Halaman 4</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         4. GALLERY REPLIKASI
+    ================================= -->
+    <section class="content repl-gallery" id="gallery-replikasi">
+      <h2 class="ss-title">History Gallery Paragonian yang berhasil Replikasi Improvement ke area lai</h2>
+      
+
+      <div class="repl-gallery-grid">
+        <div class="repl-card">
+          <img src="1.png" alt="Replikasi 1">
+          <p class="repl-label">Tim Explore - Batch 7</p>
+        </div>
+
+        <div class="repl-card">
+          <img src="2.png" alt="Replikasi 2">
+          <p class="repl-label">Tim Hashira - Btach 7</p>
+        </div>
+
+        <div class="repl-card">
+          <img src="3.png" alt="Replikasi 2">
+          <p class="repl-label">Tim Fearless Pioneers - Batch 7</p>
+        </div>
+
+        <div class="repl-card">
+          <img src="4.png" alt="Replikasi 3">
+          <p class="repl-label">Denis Albarkah - Liquid Factory</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS: toggle menu + history page -->
+  <script>
+    // navbar
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      const nav = document.getElementById('mainNav');
+      nav?.classList.toggle('active');
+    });
+
+    // history pages
+    const buttons = document.querySelectorAll('.history-nav-btn');
+    const pages   = document.querySelectorAll('.history-page');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+
+        buttons.forEach(b => b.classList.remove('active'));
+        pages.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        document.querySelector(`.history-page[data-page="${target}"]`)?.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

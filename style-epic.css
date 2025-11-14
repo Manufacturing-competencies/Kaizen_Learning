@@ -1,0 +1,743 @@
+/* ================================
+   THEME EPIC (selaras Canva)
+   Edit variable warna di sini
+================================= */
+:root{
+  --epic-primary:   #4f46e5;  /* indigo */
+  --epic-secondary: #7c3aed;  /* purple */
+  --epic-accent:    #a78bfa;  /* light purple */
+  --epic-bg-soft:   #f5f3ff;  /* soft background box */
+  --epic-text-strong:#312e81;
+}
+
+/* wrapper konten halaman EPIC */
+.content.epic{
+  width: 100%;
+  max-width: 980px;
+  margin: 36px auto 26px;
+  padding: 0 16px;
+}
+
+/* ================================
+   HERO
+================================= */
+.epic-hero{
+  background: url('BGEPIC.png') center/cover no-repeat;
+  min-height: 58vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px 60px;
+  color: #fff;
+  position: relative;
+}
+
+/* overlay lembut agar teks tetap terbaca */
+.epic-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(79,70,229,0.4) 100%);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.epic-hero h1,
+.epic-hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.epic-hero-sub {
+  margin-top: 12px;
+  font-weight: 600;
+  opacity: .96;
+}
+
+/* tambahkan blur ke overlay sekalian */
+.epic-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(79,70,229,0.4) 100%);
+  border-radius: inherit;
+  z-index: 0;
+  backdrop-filter: blur(2px);
+}
+
+
+
+/* ================================
+   Heading & Intro
+================================= */
+.epic-h2{
+  color: var(--epic-primary);
+  border-bottom: 4px solid var(--epic-accent);
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.epic-intro{
+  background: var(--epic-bg-soft);
+  border: 1px solid #ddd6fe;
+  color: var(--epic-text-strong);
+  padding: 14px 16px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+/* =========================================================
+   KARTU UTAMA: "Bagaimana cara akses EPIC?"
+   (mengikuti HTML: <main class="epic-wrap"><section class="epic-card">…)
+========================================================= */
+.epic-wrap{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
+
+.epic-card{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;   /* teks : ilustrasi */
+  gap: 28px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e9d5ff;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(79,70,229,.12);
+  padding: 26px 24px;
+  overflow: hidden;
+}
+
+/* dekor kiri (ikon-ikon kecil) */
+.epic-decor{
+  position: absolute;
+  left: 12px; top: 12px;
+  display: flex; flex-direction: column; gap: 10px;
+  opacity: .18; font-size: 18px; color: var(--epic-secondary);
+}
+.epic-decor i{ display: block; }
+
+/* konten teks kanan-kiri */
+.epic-content h1{
+  font-weight: 800;
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: var(--epic-text-strong);
+  margin-bottom: 8px;
+}
+.epic-content h1 span{ color: var(--epic-primary); }
+.epic-sub{
+  color: #4338ca;
+  font-weight: 700;
+  margin: 10px 0 8px;
+}
+
+/* kata "Search" ala Google */
+.epic-search-word{
+  font-weight: 800; font-size: 2.6rem; letter-spacing: .02em;
+  margin: 6px 0 14px;
+}
+.g-r  { color:#ea4335; } /* S */
+.g-b  { color:#4285f4; } /* e */
+.g-y  { color:#fbbc05; } /* a */
+.g-r2 { color:#ea4335; } /* r */
+.g-g  { color:#34a853; } /* c */
+.g-b2 { color:#4285f4; } /* h */
+
+/* address bar */
+.epic-address{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:10px; background:#fff;
+  border:2px solid var(--epic-accent);
+  box-shadow: 0 6px 18px rgba(167,139,250,.22);
+  padding: 12px 14px;
+  border-radius: 14px;
+  max-width: 520px;
+}
+.addr-text{
+  font-weight: 700; color:#1f2937; letter-spacing:.2px;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.addr-btn{
+  display:grid; place-items:center;
+  width: 38px; height: 38px;
+  border-radius: 10px; border: 0;
+  color:#fff; background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(99,102,241,.25);
+}
+.addr-btn i{ font-size: 16px; }
+
+/* catatan login */
+.epic-note{
+  margin: 12px 0 12px;
+  font-size: .95rem;
+  color: var(--epic-text-strong);
+  background: var(--epic-bg-soft);
+  border: 1px solid #ddd6fe;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+/* kotak kredensial */
+.epic-cred{
+  background: #ffffff;
+  border: 2px dashed #c4b5fd;
+  border-radius: 14px;
+  padding: 12px 14px;
+  max-width: 520px;
+  box-shadow: 0 6px 18px rgba(167,139,250,.12) inset;
+}
+.cred-row{
+  display: grid;
+  grid-template-columns: 110px 12px 1fr;
+  gap: 8px;
+  align-items: center;
+  font-size: .98rem;
+  color: #111827;
+}
+.cred-label{ font-weight: 700; color:#5b21b6; }
+.cred-sep  { text-align:center; color:#6b7280; }
+.cred-value{ font-weight: 700; }
+
+/* footer kecil */
+.epic-divider{ border: 0; border-top: 1px solid #e9d5ff; margin: 14px 0; }
+.epic-foot{ color:#6b7280; font-size:.9rem; }
+
+/* ilustrasi kanan */
+.epic-illustration{
+  width: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+.epic-illustration img{
+  width: 100%; max-width: 420px; height: auto;
+  filter: drop-shadow(0 14px 24px rgba(0,0,0,.15));
+}
+
+/* aksen ✦ */
+.epic-sparkle{
+  position: absolute;
+  right: 16px; top: 12px; color: #a78bfa; opacity:.5;
+}
+.epic-sparkle.s2{
+  right: 46px; top: 42px; opacity:.35; transform: scale(1.2);
+}
+
+.epic-illustration.fallback {
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(167,139,250,.08);
+}
+.epic-illustration.fallback::before {
+  content: "💻";
+  font-size: 64px;
+  opacity: .35;
+}
+
+
+
+/* responsif kartu akses */
+@media (max-width: 980px){
+  .epic-card{
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .epic-illustration{ order: -1; } /* ilustrasi di atas konten */
+  .epic-decor{ display:none; }
+}
+@media (max-width: 560px){
+  .epic-content h1{ font-size: 1.7rem; }
+  .epic-search-word{ font-size: 2.1rem; }
+  .epic-hero h1{ font-size: 2.1rem; }
+}
+
+/* =========================================================
+   KOMPONEN LAIN (opsional): grid 4 pilar, dokumentasi, tombol form
+   — discope ke .epic-grid agar tidak bentrok dengan .epic-card utama
+========================================================= */
+
+/* Grid 4 pilar */
+.epic-grid{
+  display:grid; grid-template-columns:repeat(4, minmax(0,1fr));
+  gap:12px; margin:14px 0 22px;
+}
+.epic-grid .epic-card{
+  background:#ffffff; border:1px solid #e9d5ff; border-radius:14px;
+  padding:14px; box-shadow:0 4px 12px rgba(79,70,229,.08);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.epic-grid .epic-card:hover{ transform:translateY(-3px); box-shadow:0 10px 20px rgba(79,70,229,.12); }
+.epic-grid .epic-card h3{ color:#6d28d9; margin-bottom:6px; }
+
+/* Dokumentasi */
+.epic-media{
+  margin-top:22px; padding:16px; border-radius:16px; text-align:center;
+  background:#faf5ff; border:1px solid #e9d5ff; box-shadow:0 3px 10px rgba(0,0,0,.06);
+}
+.epic-img{
+  display:block; width:100%; max-width:760px; margin:0 auto;
+  border-radius:14px; border:4px solid var(--epic-accent);
+  box-shadow:0 4px 14px rgba(0,0,0,.12);
+}
+
+/* Tombol cepat form */
+.epic-form-grid{
+  display:grid; grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:12px; margin:14px 0 20px;
+}
+.epic-btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:12px 16px; border-radius:14px; text-decoration:none; font-weight:700;
+  background:linear-gradient(135deg, #6366f1, #8b5cf6); color:#fff;
+  box-shadow:0 4px 12px rgba(99,102,241,.18);
+  transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+.epic-btn:hover{ transform:translateY(-2px); box-shadow:0 8px 18px rgba(99,102,241,.25); filter:brightness(1.03); }
+
+/* Dropdown embed (sheet/form) */
+.epic-label{ display:block; font-weight:700; margin-bottom:8px; color:var(--epic-primary); }
+.epic-select{
+  width:100%; max-width:360px; padding:10px 12px; margin-bottom:12px;
+  border-radius:12px; border:2px solid var(--epic-accent);
+  background:var(--epic-bg-soft); color:var(--epic-text-strong); font-weight:600;
+}
+.epic-iframe-wrap{ margin-bottom:10px; }
+
+/* Sheet border jika pakai komponen dari 5R */
+.epic-sheet{ border-color: var(--epic-accent); }
+
+/* Responsive tambahan */
+@media (max-width: 1024px){
+  .epic-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 560px){
+  .epic-grid{ grid-template-columns:1fr; }
+  .epic-form-grid{ grid-template-columns:1fr; }
+}
+
+/* Versi halus: kecil, samar, agak keluar panel */
+.epic-card .epic-decor{
+  left:-10px; top:-10px;
+  opacity:.06;
+  transform: scale(.85);
+  pointer-events:none;
+}
+
+@media (max-width:980px){
+  .epic-card .epic-decor{ display:none; }
+}
+
+/* ===== EPIC — ANYTIME SECTION (24/7) ===== */
+.epic-anytime{
+  --ring:#fcd34d; /* kuning lembut ala canva contoh */
+  margin-top: 18px;
+}
+
+.anytime-head{
+  display:grid;
+  grid-template-columns: 180px 1fr;
+  align-items:center;
+  gap:18px;
+  margin-bottom:14px;
+}
+
+.anytime-clock{
+  position:relative;
+  width:180px; height:180px;
+  border-radius:50%;
+  background:
+    radial-gradient(transparent 62%, #0000 63%) padding-box,
+    conic-gradient(from 0deg, var(--ring) 0 100%);
+  box-shadow: 0 8px 22px rgba(0,0,0,.06);
+  display:grid; place-items:center;
+  isolation:isolate;
+}
+.anytime-clock i{
+  position:absolute; inset:0; margin:auto;
+  font-size:0; /* purely decorative ring, icon hidden */
+}
+.anytime-clock span{
+  font-weight:800; font-size:40px; color:#f59e0b;
+  letter-spacing:.02em;
+}
+
+.anytime-title-wrap h2{
+  font-size:2rem; font-weight:800;
+  color: var(--epic-text-strong);
+}
+.anytime-title-wrap h2 span{
+  color: var(--epic-primary);
+}
+.anytime-sub{
+  margin-top:6px;
+  color:#4b5563; font-weight:600;
+}
+
+/* Cards */
+.anytime-cards{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap:14px; margin-top:12px;
+}
+.any-card{
+  background:#fff;
+  border:1px solid #e9d5ff;
+  border-radius:16px;
+  padding:16px 14px;
+  text-align:center;
+  box-shadow:0 6px 16px rgba(79,70,229,.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.any-card:hover{
+  transform: translateY(-4px);
+  box-shadow:0 14px 28px rgba(79,70,229,.12);
+}
+.any-illust{
+  width:92px; height:92px; margin:6px auto 10px;
+  display:grid; place-items:center;
+  border-radius:18px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color:#fff;
+  box-shadow:0 6px 16px rgba(99,102,241,.25);
+}
+.any-illust i{ font-size:40px; }
+
+.any-card h3{
+  margin-top:4px;
+  color:#5b21b6; font-weight:800; letter-spacing:.3px;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .anytime-head{
+    grid-template-columns: 140px 1fr;
+  }
+  .anytime-clock{ width:140px; height:140px; }
+  .anytime-clock span{ font-size:32px; }
+}
+@media (max-width: 640px){
+  .anytime-head{
+    grid-template-columns: 1fr;
+    text-align:center;
+    justify-items:center;
+  }
+  .anytime-cards{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===== EPIC — COURSE WAJIB ===== */
+.epic-course{
+  background: #fef08a;
+  border-radius: 16px;
+  padding: 30px 24px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.08);
+  margin-top: 28px;
+}
+
+.epic-course h2{
+  text-align: center;
+  color: #111827;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: .5px;
+  margin-bottom: 18px;
+}
+
+/* banner kalender */
+.course-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffefc;
+  border: 3px solid #a78bfa;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 480px;
+  margin: 0 auto 24px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+.course-banner i{
+  font-size: 2.4rem;
+  color: #a855f7;
+}
+
+/* daftar course */
+.course-list{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 18px 40px;
+  margin-top: 10px;
+}
+.course-list ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.course-list li{
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-left: 34px;
+  line-height: 1.4;
+  color: #1f2937;
+}
+.course-list li::before{
+  content: "\f00c"; /* Font Awesome check-square */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #10b981;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  width: 22px; height: 22px;
+  display: grid; place-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+/* responsive */
+@media (max-width: 780px){
+  .course-list{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .epic-course h2{ font-size: 1.6rem; }
+}
+
+
+/* ===== EPIC — TUTORIAL MENGEKSPOR ===== */
+.epic-tutorial{
+  margin-top:30px;
+}
+
+.epic-tutorial h2{
+  text-align:center;
+  font-size:1.8rem;
+  color:#5b21b6;
+  margin-bottom:20px;
+  font-weight:800;
+}
+
+.tutorial-wrap{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:24px;
+  align-items:center;
+}
+
+.tutorial-img img{
+  width:100%;
+  max-width:420px;
+  border-radius:14px;
+  display:block;
+  margin:auto;
+}
+
+.tutorial-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.tutorial-item{
+  border-left:6px solid transparent;
+  padding:10px 14px;
+  border-radius:10px;
+  background:#fff;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition:.2s ease;
+}
+.tutorial-item:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 16px rgba(0,0,0,.12);
+}
+
+.tutorial-item p{
+  font-weight:600;
+  line-height:1.5;
+  color:#333;
+}
+
+.tutorial-item a{
+  color:#8b5cf6;
+  font-weight:700;
+  text-decoration:none;
+}
+.tutorial-item a:hover{
+  text-decoration:underline;
+}
+
+/* warna label di sisi kiri */
+.tutorial-item.pink    { border-color:#f9a8d4; }
+.tutorial-item.rose    { border-color:#f472b6; }
+.tutorial-item.purple  { border-color:#c084fc; }
+.tutorial-item.blue    { border-color:#93c5fd; }
+.tutorial-item.sky     { border-color:#a5b4fc; }
+
+/* responsif */
+@media (max-width:780px){
+  .tutorial-wrap{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .tutorial-list{
+    align-items:center;
+  }
+  .tutorial-item{
+    max-width:460px;
+    width:100%;
+  }
+}
+
+
+/* ====== POLISH & AKSESIBILITAS ====== */
+
+/* 1) Fokus yang jelas untuk elemen interaktif */
+.epic-btn:focus-visible,
+.addr-btn:focus-visible,
+.tutorial-list a:focus-visible,
+.mini-nav .nav-links a:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* 2) Link lebih nyaman dibaca + wrap kalau panjang */
+.tutorial-list a,
+.epic-note a,
+.course-list a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-word;
+}
+
+/* 3) Kurangi “ganggu” ikon dekor di kartu akses (kalau masih terasa) */
+.epic-card .epic-decor {
+  opacity: .04;      /* semu */
+  filter: blur(0.2px);
+  transform: scale(.8);
+}
+
+/* 4) Hero radial gradient disesuaikan di layar kecil */
+@media (max-width: 560px){
+  .epic-hero{
+    background:
+      radial-gradient(900px 320px at 50% -120px, #e9d5ff, transparent 55%),
+      linear-gradient(135deg, var(--epic-primary), var(--epic-secondary));
+  }
+}
+
+/* 5) Preferensi “reduce motion”: matikan animasi / hover-translate */
+@media (prefers-reduced-motion: reduce){
+  * { transition: none !important; animation: none !important; }
+}
+
+/* 6) Jaga gambar selalu responsif & aman dari overflow */
+img { max-width: 100%; height: auto; }
+
+/* 7) Pertegas kontras tombol address bar saat hover */
+.addr-btn:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+/* 8) Spasi ekstra di daftar course pada perangkat sentuh */
+@media (hover: none) and (pointer: coarse){
+  .course-list li { margin-bottom: 12px; }
+}
+
+
+/* ===== GLOBAL MOBILE FIX (≤ 480px) ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .content,
+  .content.epic {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  /* Biar card nggak mepet pinggir */
+  .card,
+  section.content > div {
+    border-radius: 14px;
+  }
+}
+
+/* ===== EPIC: MOBILE (≤ 480px) ===== */
+@media (max-width: 480px) {
+  .epic-hero {
+    min-height: 260px;
+    padding: 70px 14px 40px;
+  }
+
+  .epic-hero h1 {
+    font-size: 1.7rem;
+    line-height: 1.25;
+  }
+
+  .epic-wrap {
+    padding: 0 10px;
+    margin-bottom: 24px;
+  }
+
+  .epic-card {
+    grid-template-columns: 1fr;    /* gambar atas, teks bawah */
+    padding: 18px 14px;
+    gap: 16px;
+  }
+
+  .epic-illustration {
+    justify-content: center;
+  }
+
+  .epic-illustration img {
+    max-width: 260px;
+  }
+
+  .epic-content h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .epic-sub {
+    font-size: 0.9rem;
+  }
+
+  .epic-search-word {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+  }
+
+  .epic-address {
+    padding: 10px 10px;
+    gap: 8px;
+  }
+
+  .addr-text {
+    font-size: 0.9rem;
+  }
+
+  .epic-note {
+    font-size: 0.9rem;
+  }
+
+  .epic-cred {
+    padding: 10px 10px;
+  }
+}

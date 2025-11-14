@@ -1,0 +1,591 @@
+/* ================================
+   REPLIKASI IMPROVEMENT - LANDING STYLE
+================================ */
+
+/* SECTION UTAMA – HERO BIRU */
+.ss-replikasi {
+  margin-top: 32px;
+  padding: 40px 22px 36px;
+  border-radius: 26px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(900px 420px at 0% -40%, rgba(59,130,246,0.65), transparent 60%),
+    linear-gradient(135deg, #1d4ed8, #2563eb);
+  box-shadow: 0 16px 40px rgba(15,23,42,0.35);
+}
+
+/* aksen bulat-bulat di background */
+.ss-replikasi::before,
+.ss-replikasi::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.1);
+}
+.ss-replikasi::before {
+  width: 220px;
+  height: 220px;
+  top: -80px;
+  right: -40px;
+}
+.ss-replikasi::after {
+  width: 140px;
+  height: 140px;
+  bottom: -40px;
+  left: 18%;
+}
+
+/* judul & paragraf di hero */
+.ss-replikasi .ss-title {
+  border-left: none;
+  padding-left: 0;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.ss-replikasi .ss-desc {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 620px;
+  color: #e5e7eb;
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+/* ===== BLOK 1: KONSEP & MANFAAT (KARTU PUTIH) ===== */
+
+.ss-replikasi-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ss-repl-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px 16px 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 26px rgba(15,23,42,0.18);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #111827;
+}
+
+.ss-repl-card.soft {
+  background: linear-gradient(135deg, #eff6ff, #ecfdf5);
+}
+
+.ss-repl-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.ss-repl-card h3 i {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #1d4ed8;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+/* list di dalam kartu */
+.ss-repl-list {
+  margin: 0;
+  padding-left: 20px;
+}
+.ss-repl-list li + li {
+  margin-top: 4px;
+}
+
+/* ===== BLOK 2: KRITERIA ===== */
+
+.ss-repl-criteria {
+  margin-top: 26px;
+}
+
+.ss-repl-criteria h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f9fafb;
+  margin-bottom: 10px;
+}
+.ss-repl-criteria h3 i {
+  color: #22c55e;
+}
+
+.ss-repl-criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 12px;
+}
+
+.ss-repl-chip {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.12);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.chip-label {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-bottom: 4px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+/* ===== BLOK 3: LANGKAH REPLIKASI ===== */
+
+.ss-repl-steps {
+  margin-top: 28px;
+}
+
+.ss-repl-steps h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f9fafb;
+  margin-bottom: 10px;
+}
+.ss-repl-steps h3 i {
+  color: #f97316;
+}
+
+.ss-repl-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 14px;
+}
+
+.ss-repl-step {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 12px 12px 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(15,23,42,0.18);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #111827;
+}
+
+.step-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, #f97316, #ec4899);
+  margin-bottom: 6px;
+  box-shadow: 0 4px 12px rgba(248,113,113,0.45);
+}
+
+.ss-repl-step h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* ===== BLOK 4: CONTOH REPLIKASI ===== */
+
+.ss-repl-example {
+  margin-top: 26px;
+  background: #fefce8;
+  border-radius: 22px;
+  padding: 14px 16px 16px;
+  border: 1px solid #facc15;
+  box-shadow: 0 10px 26px rgba(202,138,4,0.26);
+  font-size: 0.9rem;
+}
+
+.ss-repl-example h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+.ss-repl-example h3 i {
+  color: #f59e0b;
+}
+
+.ss-repl-example-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.2fr) auto minmax(0,1.2fr);
+  gap: 12px;
+  align-items: stretch;
+  margin-bottom: 8px;
+}
+
+.ss-repl-example-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px 12px;
+  border: 1px solid #facc15;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.example-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #b45309;
+  margin-bottom: 4px;
+}
+
+.example-text {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #1f2937;
+}
+
+.ss-repl-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: #b45309;
+}
+
+.ss-repl-note {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #78350f;
+}
+
+/* ========= RESPONSIVE REPLIKASI ========= */
+@media (max-width: 1024px) {
+  .ss-replikasi-grid {
+    grid-template-columns: 1fr;
+  }
+  .ss-repl-steps-grid {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .ss-replikasi {
+    padding: 30px 18px 30px;
+    border-radius: 0; /* full-bleed di HP */
+  }
+  .ss-replikasi .ss-title {
+    font-size: 1.7rem;
+  }
+  .ss-repl-criteria-grid {
+    grid-template-columns: 1fr;
+  }
+  .ss-repl-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .ss-repl-example-grid {
+    grid-template-columns: 1fr;
+  }
+  .ss-repl-arrow {
+    display: none;
+  }
+}
+
+/* ================================
+   MATRIKS STATUS REPLIKASI
+================================ */
+
+.ss-repl-matrix-v2 {
+  margin-top: 36px;
+  padding: 16px 18px 20px;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.14);
+  border: 1px solid #e5e7eb;
+}
+
+.ss-repl-matrix-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.ss-repl-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch; /* kolom sama tinggi */
+}
+
+/* kolom utama */
+.repl-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* bar warna atas */
+.matrix-header {
+  text-align: center;
+  padding: 10px 6px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+
+/* kotak isi tengah */
+.matrix-box {
+  margin-top: 10px;
+  background: #ffffff;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.10);
+}
+
+/* bar warna bawah */
+.matrix-footer {
+  margin-top: 16px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 0.87rem;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+
+/* ---- WARNA PER STATUS ---- */
+.approved .matrix-header,
+.approved .matrix-footer {
+  background: #15803d;
+}
+.approved .matrix-box {
+  border-color: #15803d;
+}
+
+.not-approved .matrix-header,
+.not-approved .matrix-footer {
+  background: #b91c1c;
+}
+.not-approved .matrix-box {
+  border-color: #b91c1c;
+}
+
+.under-review .matrix-header,
+.under-review .matrix-footer {
+  background: #f59e0b;
+}
+.under-review .matrix-box {
+  border-color: #f59e0b;
+}
+
+.implemented .matrix-header,
+.implemented .matrix-footer {
+  background: #0f3c64;
+}
+.implemented .matrix-box {
+  border-color: #0f3c64;
+}
+
+/* responsif matriks */
+@media (max-width: 1024px) {
+  .ss-repl-matrix-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .ss-repl-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================
+   HISTORY REPLIKASI – “BUKU”
+================================ */
+
+.history-repl {
+  margin-top: 40px;
+}
+
+.history-book {
+  margin-top: 20px;
+  background: #f3f4f6;
+  border-radius: 24px;
+  padding: 18px 20px 20px;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.12);
+}
+
+/* wrapper halaman */
+.history-page-wrapper {
+  position: relative;
+  min-height: 260px;
+}
+
+/* tiap halaman */
+.history-page {
+  display: none;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+.history-page.active {
+  display: grid;
+}
+
+.history-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(15,23,42,0.35);
+  object-fit: cover;
+}
+
+.history-text h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #111827;
+}
+.history-text p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #374151;
+}
+.history-text ul {
+  margin-top: 6px;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+
+/* navigasi halaman */
+.history-nav {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.history-nav-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #e5e7eb;
+  color: #111827;
+  transition: background .15s ease, color .15s ease, box-shadow .15s ease;
+}
+.history-nav-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(37,99,235,0.4);
+}
+
+/* responsif history */
+@media (max-width: 800px) {
+  .history-page {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================
+   GALLERY REPLIKASI – COVER BUKU A4
+================================ */
+
+.repl-gallery {
+  margin-top: 40px;
+}
+
+.repl-gallery-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* A4 lebih lebar */
+  gap: 22px;
+}
+
+.repl-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform .2s ease, box-shadow .2s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.repl-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 26px rgba(0,0,0,0.18);
+}
+
+.repl-card img {
+  width: 100%;
+  height: auto;                 /* ⬅️ penting untuk A4 */
+  aspect-ratio: 3 / 4;          /* ⬅️ A4 ratio (portrait) */
+  object-fit: contain;          /* ⬅️ tidak terpotong */
+  background: #f3f4f6;          /* latar belakang abu lembut */
+  padding: 6px;                 /* beri jarak seperti cover buku */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.repl-label {
+  padding: 10px 8px 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ===== GLOBAL MOBILE FIX (≤ 480px) ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .content,
+  .content.epic {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  /* Biar card nggak mepet pinggir */
+  .card,
+  section.content > div {
+    border-radius: 14px;
+  }
+}

@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Program SUMBANG SARAN</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Global & SUMBANG SARAN style -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-SS.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar mini-nav" role="navigation" aria-label="Navigasi utama">
+    <button class="logo" type="button" onclick="window.location.href='index.html'" aria-label="Kembali ke Dashboard">
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+      <span>Dashboard</span>
+    </button>
+
+    <ul class="nav-links" id="mainNav">
+      <li>
+        <a href="index.html#kontak">
+          <i class="fa-solid fa-address-book"></i> Kontak
+        </a>
+      </li>
+    </ul>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="mainNav" aria-expanded="false">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <main>
+    <!-- ================================
+       HERO SUMBANG SARAN (OPENING)
+    ================================ -->
+    <section class="ss-hero" aria-labelledby="ss-hero-title">
+      <div class="ss-hero-inner">
+        <h1 id="ss-hero-title">PROGRAM SUMBANG SARAN</h1>
+        <p class="ss-subtitle">
+          Ide kecil hari ini bisa menjadi dampak besar untuk Paragon esok hari.
+          Sampaikan gagasanmu, wujudkan perubahan nyata!
+        </p>
+      </div>
+    </section>
+
+    <!-- ================================
+       LINK CEPAT SUMBANG SARAN
+    ================================ -->
+    <section class="content ss-links" aria-labelledby="ss-links-title">
+      <h2 id="ss-links-title" class="ss-title ss-title-center">Informasi Sumbang Saran</h2>
+
+      <div class="ss-links-grid" role="group" aria-label="Link cepat Sumbang Saran">
+        <a class="ss-link-card" href="https://ss.pti-cosmetics.com/sipp/web/index.php?r=site%2Flogin" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Link Submitted Sumbang Saran</h3>
+            <p>Cek list sumbang saran yang sudah kamu submit di SIPP.</p>
+          </div>
+        </a>
+
+        <a class="ss-link-card" href="https://bit.ly/LaporanSumbangSaranPlant" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-address-book" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Pembuatan Laporan Sumbang Saran</h3>
+            <p>Template laporan implementasi SS untuk plant.</p>
+          </div>
+        </a>
+
+        <a class="ss-link-card" href="https://drive.google.com/file/d/1m89sN_7QLbn7fiEAPpsW_mNyQrvPXofX/view?usp=sharing" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-video" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Video Edukasi Sumbang Saran</h3>
+            <p>Pahami alur & manfaat SS lewat video singkat.</p>
+          </div>
+        </a>
+
+        <a class="ss-link-card" href="https://www.canva.com/design/DAG2enoHOrE/qU7mW-jVMM1O4Vw7s7MyyA/edit?utm_content=DAG2enoHOrE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Prompt Desain AI</h3>
+            <p>Contoh prompt desain untuk visualisasi implementasi SS.</p>
+          </div>
+        </a>
+
+        <a class="ss-link-card" href="DENI SAPUTRA" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-gift" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Best Sumbang Saran Bulanan</h3>
+            <p>Highlight ide terbaik setiap bulan.</p>
+          </div>
+        </a>
+
+        <a class="ss-link-card" href="DENI SAPUTRA" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Reward Bulanan Sumbang Saran</h3>
+            <p>Informasi hadiah untuk pengusul SS.</p>
+          </div>
+        </a>
+
+        <a class="ss-link-card" href="DENI SAPUTRA" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-gift" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Tematik Bulanan</h3>
+            <p>Tema fokus SS setiap bulan.</p>
+          </div>
+        </a>
+
+        <a class="ss-link-card" href="DENI SAPUTRA" target="_blank" rel="noopener">
+          <div class="ss-link-icon"><i class="fa-solid fa-gift" aria-hidden="true"></i></div>
+          <div class="ss-link-body">
+            <h3>Reward Tematik</h3>
+            <p>Reward khusus untuk SS tematik bulanan.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================================
+       AWALAN TENTANG SUMBANG SARAN
+    ================================ -->
+    <section class="content ss-intro">
+      <h2 class="ss-title">Apa itu Sumbang Saran?</h2>
+
+      <p class="ss-desc">
+        <strong>Sumbang Saran</strong> adalah salah satu tools yang dapat digunakan oleh Paragonian
+        untuk mengajukan ide-ide improvement di area kerja masing-masing.
+      </p>
+    </section>
+
+    <section class="content ss-intro">
+      <h2 class="ss-title">Manfaat Sumbang Saran</h2>
+
+      <p class="ss-desc">
+        <strong>Secara lebih luas, Sumbang Saran bermanfaat dalam hal berikut:</strong>
+      </p>
+
+      <ul class="ss-list">
+        <li>Peningkatan produktivitas kerja.</li>
+        <li>Penghematan energi, material, dan sumber daya lainnya.</li>
+        <li>Perbaikan lingkungan kerja.</li>
+        <li>Perbaikan mesin, peralatan, dan proses.</li>
+        <li>Perbaikan kualitas produk, dan lain-lain.</li>
+      </ul>
+
+      <p class="ss-desc">
+        Namun hal yang perlu diperhatikan, bahwa <strong>saran dari individu sebagian besar
+        memberikan manfaat pada peningkatan moral, perbaikan kinerja, dan pembelajaran atas
+        pengalaman kerja.</strong>
+      </p>
+    </section>
+
+    <!-- ================================
+       ATURAN MEMBUAT SUMBANG SARAN
+    ================================ -->
+    <section class="content ss-rules" id="aturan-ss">
+      <h2 class="ss-title">Aturan dalam Membuat Sumbang Saran</h2>
+
+      <p class="ss-desc ss-desc-lead">
+        Kriteria Sumbang Saran yang benar:
+      </p>
+
+      <ul class="ss-rules-list">
+        <li>Harus merupakan ide perbaikan terkait pekerjaan sehari-hari dan masih
+          dalam kewenangan departemen pengusul.</li>
+        <li>SS diajukan oleh 1 orang pengusul (Paragonian level operasional).</li>
+        <li>SS bisa merupakan:
+          <ul>
+            <li>Ide orisinal yang belum pernah ada sebelumnya.</li>
+            <li>Modifikasi dari contoh penerapan di tempat lain yang
+              disesuaikan dengan lokasi kerja.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ================================
+       CONTOH BUKAN SS
+    ================================ -->
+    <section class="content ss-non-ss" id="non-ss">
+      <h2 class="ss-title">Contoh yang Bukan Termasuk SS</h2>
+
+      <div class="ss-nonss-group">
+        <!-- KATEGORI 1 -->
+        <div class="ss-nonss-block">
+          <p class="ss-nonss-red">
+            - SS terkait kebijakan perusahaan; tunjangan, insentif, dsb<br>
+            - SS terkait peraturan perusahaan dan struktur organisasi perusahaan; Jam kerja, Perubahan aturan kerja, dsb
+          </p>
+
+          <div class="ss-table-wrap">
+            <table class="ss-nonss-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Departemen</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20112</td>
+                  <td>LIQUID FACTORY</td>
+                  <td>Area smoking</td>
+                </tr>
+                <tr>
+                  <td>2129</td>
+                  <td>POWDER FACTORY PRODUCTION</td>
+                  <td>Diperbolehkannya karyawan keluar ke mushola untuk sholat dhuha saat hello time</td>
+                </tr>
+                <tr>
+                  <td>11660</td>
+                  <td>SEMISOLID FACTORY PRODUCTION</td>
+                  <td>Makan jam lembur</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI 2 -->
+        <div class="ss-nonss-block">
+          <p class="ss-nonss-red">
+            - SS yang berupa kritik dan keluhan, curahan hati, komplain
+          </p>
+
+          <div class="ss-table-wrap">
+            <table class="ss-nonss-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Departemen</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>17208</td>
+                  <td>LIQUID FACTORY</td>
+                  <td>Pengajian bulanan online via zoom berbahaya</td>
+                </tr>
+                <tr>
+                  <td>6754</td>
+                  <td>LIQUID FACTORY PRODUCTION</td>
+                  <td>Udara panas di area olah</td>
+                </tr>
+                <tr>
+                  <td>14375</td>
+                  <td>POWDER FACTORY PRODUCTION</td>
+                  <td>Ditiadakan sift malam saat pandemi corona</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI 3 -->
+        <div class="ss-nonss-block">
+          <p class="ss-nonss-red">
+            - SS yang tidak realistis dikerjakan dan tidak dalam kewenangan Departemen pengusul
+          </p>
+
+          <div class="ss-table-wrap">
+            <table class="ss-nonss-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Departemen</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>18077</td>
+                  <td>SEMISOLID FACTORY PRODUCTION</td>
+                  <td>Pengadaan alat transportasi air saat banjir</td>
+                </tr>
+                <tr>
+                  <td>10954</td>
+                  <td>SEMISOLID FACTORY PRODUCTION</td>
+                  <td>Pengadaan parkir darurat ketika kondisi JL di Jatake 4 banjir</td>
+                </tr>
+                <tr>
+                  <td>23000</td>
+                  <td>QUALITY</td>
+                  <td>Penghijauan kembali area Pabrik Paragon J6 agar terhindar dari bencana banjir</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI 4 -->
+        <div class="ss-nonss-block">
+          <p class="ss-nonss-red">
+            - SS yang berupa aktivitas <em>“Just Do It”</em>
+          </p>
+
+          <div class="ss-table-wrap">
+            <table class="ss-nonss-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Departemen</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>21330</td>
+                  <td>RESEARCH AND DEVELOPMENT</td>
+                  <td>Pengadaan refill pulpen yang awet</td>
+                </tr>
+                <tr>
+                  <td>143</td>
+                  <td>LIQUID FACTORY PRODUCTION</td>
+                  <td>Pengadaan alat kebersihan</td>
+                </tr>
+                <tr>
+                  <td>20671</td>
+                  <td>POWDER FACTORY</td>
+                  <td>Pengadaan APD di meja leader area kerja primer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================
+       CONTOH MERUPAKAN SS
+    ================================ -->
+    <section class="content ss-yes-ss" id="contoh-ss">
+      <h2 class="ss-title">Contoh yang Merupakan SS</h2>
+
+      <div class="ss-yes-group">
+        <!-- KATEGORI K3 -->
+        <div class="ss-yes-block">
+          <p class="ss-yes-red">- Kategori Jenis SS K3</p>
+          <div class="ss-table-wrap">
+            <table class="ss-yes-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>24832</td>
+                  <td>Pembuatan Cover Tambahan pada Mesin Flowrap</td>
+                </tr>
+                <tr>
+                  <td>24863</td>
+                  <td>Pembuatan Penyangga/Pelindung untuk Mesin Segel dan Penambahan Tirai Pintu Masuk Partisi</td>
+                </tr>
+                <tr>
+                  <td>24871</td>
+                  <td>Pembuatan Tempat Pembuangan Parafin/Alkohol Bekas Cuci Mesin di Line VMN</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI PRODUKTIVITAS -->
+        <div class="ss-yes-block">
+          <p class="ss-yes-red">- Kategori Jenis SS Peningkatan Produktivitas</p>
+          <div class="ss-table-wrap">
+            <table class="ss-yes-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>24830</td>
+                  <td>Membuat Stiker Arah Roll pada Mesin Flowrap</td>
+                </tr>
+                <tr>
+                  <td>24837</td>
+                  <td>Membuat settingan waktu untuk proses mixing dan buzzer pada mesin VDM 05</td>
+                </tr>
+                <tr>
+                  <td>24860</td>
+                  <td>Pembuatan Plat Penahan Botol Bright Stuff di Mesin LPP 02 dan LPP 03</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI EFISIENSI BIAYA -->
+        <div class="ss-yes-block">
+          <p class="ss-yes-red">- Kategori Jenis SS Efisiensi Biaya</p>
+          <div class="ss-table-wrap">
+            <table class="ss-yes-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>24890</td>
+                  <td>Penambahan Inverter pada Mesin VPM</td>
+                </tr>
+                <tr>
+                  <td>24800</td>
+                  <td>Penghematan Gombalan dengan perubahan Proses Cuci</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI KECEPATAN PENGIRIMAN -->
+        <div class="ss-yes-block">
+          <p class="ss-yes-red">- Kategori Jenis SS Kecepatan Pengiriman</p>
+          <div class="ss-table-wrap">
+            <table class="ss-yes-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>24869</td>
+                  <td>Pembuatan Kotak Dusat Reject sesuai dengan Jenis Reject</td>
+                </tr>
+                <tr>
+                  <td>24873</td>
+                  <td>Pembuatan Troli untuk Pemindahan Bahan Baku</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI KECEPATAN PROSES -->
+        <div class="ss-yes-block">
+          <p class="ss-yes-red">- Kategori Jenis SS Kecepatan Proses (Lead Time)</p>
+          <div class="ss-table-wrap">
+            <table class="ss-yes-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>24838</td>
+                  <td>Pembuatan Guide Cooling Tunnel</td>
+                </tr>
+                <tr>
+                  <td>24844</td>
+                  <td>SO &amp; Pengelompokan Area Peletakan Stock Base di Lab Semisolid RND</td>
+                </tr>
+                <tr>
+                  <td>24845</td>
+                  <td>Pembuatan Form Retest Bahan Baku Online</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- KATEGORI PENERAPAN 5R -->
+        <div class="ss-yes-block">
+          <p class="ss-yes-red">- Kategori Jenis SS Penerapan 5R</p>
+          <div class="ss-table-wrap">
+            <table class="ss-yes-table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Judul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>24834</td>
+                  <td>Pembuatan Tempat Penyimpanan Heat Gun</td>
+                </tr>
+                <tr>
+                  <td>24862</td>
+                  <td>Pembuatan Tempat untuk Stiker Labelling VMP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================
+       PEMBUATAN SS – 4 LANGKAH
+    ================================ -->
+    <section class="content ss-flow" id="pembuatan-ss">
+      <h2 class="ss-title">Pembuatan Sumbang Saran</h2>
+      <p class="ss-desc">
+        Secara garis besar, pembuatan SS mengikuti alur berikut:
+      </p>
+
+      <div class="ss-flow-grid">
+        <!-- GO & SEE -->
+        <article class="ss-flow-step go-see">
+          <div class="ss-flow-head">
+            <span class="badge">1</span>
+            <h3>GO &amp; SEE</h3>
+          </div>
+          <p class="ss-flow-sub">Identifikasi Masalah</p>
+          <ul>
+            <li>Amati permasalahan yang terjadi di sekitar area kerja.</li>
+            <li>Perhatikan apakah ada ketidaksesuaian yang terjadi.</li>
+            <li>Catat list masalah dan diskusikan dengan superior terkait prioritas.</li>
+            <li>Lakukan stratifikasi/pengkategorian masalah yang muncul.</li>
+          </ul>
+        </article>
+
+        <!-- WHY-WHY -->
+        <article class="ss-flow-step why">
+          <div class="ss-flow-head">
+            <span class="badge">2</span>
+            <h3>WHY–WHY</h3>
+          </div>
+          <p class="ss-flow-sub">Analisa Sebab</p>
+          <ul>
+            <li>Lakukan proses why–why analysis atau metode analisis sederhana lain.</li>
+            <li>Tujuannya untuk menemukan akar penyebab permasalahan.</li>
+          </ul>
+        </article>
+
+        <!-- IDEATION -->
+        <article class="ss-flow-step ideation">
+          <div class="ss-flow-head">
+            <span class="badge">3</span>
+            <h3>IDEATION</h3>
+          </div>
+          <p class="ss-flow-sub">Pembuatan Sumbang Saran</p>
+          <ul>
+            <li>Buat rencana improvement sederhana untuk mengatasi masalah.</li>
+            <li>Ide bisa baru, duplikasi, atau modifikasi dari improvement sebelumnya.</li>
+          </ul>
+        </article>
+
+        <!-- IMPLEMENTATION -->
+        <article class="ss-flow-step impl">
+          <div class="ss-flow-head">
+            <span class="badge">4</span>
+            <h3>IMPLEMENTATION</h3>
+          </div>
+          <p class="ss-flow-sub">Pembuatan Laporan</p>
+          <ul>
+            <li>Dokumentasikan keadaan sebelum dan sesudah improvement.</li>
+            <li>Deskripsikan manfaat atau benefit yang diperoleh.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================
+       LANGKAH INPUT SUMBANG SARAN
+    ================================ -->
+    <section class="content ss-input-steps" id="input-ss">
+      <h2 class="ss-title">Langkah Input Sumbang Saran</h2>
+
+      <div class="ss-steps-grid">
+        <!-- STEP 1 -->
+        <article class="ss-step-card">
+          <div class="ss-step-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+          <h3>Panduan Login</h3>
+          <p>
+            Login ke Paragon SIPP menggunakan username dan password sesuai
+            panduan. Pastikan data HR kamu sudah sesuai.
+          </p>
+        </article>
+
+        <!-- STEP 2 -->
+        <article class="ss-step-card">
+          <div class="ss-step-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+          <h3>Masuk Menu Sumbang Saran</h3>
+          <p>
+            Dari homepage SIPP pilih <strong>Input Data → Sumbang Saran</strong>
+            lalu klik tombol <strong>+ Input SS</strong>.
+          </p>
+        </article>
+
+        <!-- STEP 3 -->
+        <article class="ss-step-card">
+          <div class="ss-step-icon"><i class="fa-solid fa-id-card-clip"></i></div>
+          <h3>Lengkapi Data Pengusul</h3>
+          <p>
+            Pastikan nama, departemen, lokasi kerja, area, dan posisi sudah benar.
+            Pilih <strong>Jenis Sumbang Saran</strong> sesuai kategori ide yang diajukan.
+          </p>
+        </article>
+
+        <!-- STEP 4 -->
+        <article class="ss-step-card">
+          <div class="ss-step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Isi Detail Ide</h3>
+          <p>
+            Lengkapi kolom <strong>Judul SS</strong>, <strong>Keadaan Sebelum</strong>,
+            <strong>Ide Sumbang Saran</strong>, dan <strong>Keuntungan/Penghematan</strong>.
+          </p>
+        </article>
+
+        <!-- STEP 5 -->
+        <article class="ss-step-card">
+          <div class="ss-step-icon"><i class="fa-solid fa-people-arrows"></i></div>
+          <h3>Metode Pengerjaan &amp; Superior</h3>
+          <p>
+            Pilih metode pengerjaan (dikerjakan sendiri, order ke workshop, atau eksternal),
+            pilih nama superior, dan isi nomor telepon yang dapat dihubungi.
+          </p>
+        </article>
+
+        <!-- STEP 6 -->
+        <article class="ss-step-card">
+          <div class="ss-step-icon"><i class="fa-solid fa-file-arrow-up"></i></div>
+          <h3>Upload Lampiran &amp; Submit</h3>
+          <p>
+            Upload foto/sketsa/dokumen pendukung (max 2 MB). Pastikan semua kolom data
+            terisi sebelum klik <strong>Submit SS</strong>.
+          </p>
+        </article>
+
+        <!-- STEP 7 -->
+        <article class="ss-step-card">
+          <div class="ss-step-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>SS Berhasil Dikirim</h3>
+          <p>
+            Jika muncul notifikasi <strong>&quot;Sumbang Saran berhasil di input&quot;</strong>,
+            artinya SS sudah tersimpan dan masuk ke daftar.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================
+       PANDUAN LOGIN
+    ================================ -->
+    <section class="content ss-login" id="panduan-login">
+      <h2 class="ss-title">Panduan Login Sumbang Saran</h2>
+
+      <div class="ss-login-grid">
+        <!-- teks kiri -->
+        <article class="ss-login-card">
+          <h3><i class="fa-solid fa-user-lock"></i> Username</h3>
+          <p>
+            Username diisikan <strong>nama masing-masing</strong> dengan huruf kecil semua.
+            Jika nama terdiri &gt; 1 kata, maka spasi dipisahkan dengan tanda titik (<code>.</code>).
+          </p>
+          <p class="ss-example-title">Contoh:</p>
+          <ul class="ss-example-list">
+            <li>dwi.aswati</li>
+            <li>mulki.rahmat.muhamad</li>
+          </ul>
+
+          <h3><i class="fa-solid fa-key"></i> Password</h3>
+          <p>
+            Password diisikan <strong>tanggal lahir masing-masing</strong>
+            dengan format <strong>DDMMYY</strong>.
+          </p>
+          <p class="ss-example-title">Contoh:</p>
+          <p class="ss-example-box">
+            Jika tanggal lahir 10 Juli 1997 → password: <strong>100797</strong>
+          </p>
+        </article>
+
+        <!-- ilustrasi kanan -->
+        <div class="ss-login-illustration" aria-hidden="true">
+          <img src="SIP.png" alt="Tampilan form login Sumbang Saran" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       INPUT SS – OVERVIEW
+    ================================ -->
+    <section class="content ss-input-overview" id="input-ss-overview">
+      <h2 class="ss-title">Input Sumbang Saran</h2>
+
+      <div class="ss-overview-grid">
+        <!-- kiri -->
+        <div class="ss-overview-img" aria-hidden="true">
+          <img src="GAMBAR2.png" alt="Tampilan awal web Paragon SIPP setelah login" />
+        </div>
+
+        <!-- kanan -->
+        <article class="ss-overview-text">
+          <p class="ss-desc">
+            Setelah login ke <strong>Paragon SIPP</strong>, kamu akan melihat tampilan awal
+            seperti pada gambar. Untuk mengajukan Sumbang Saran:
+          </p>
+
+          <ul class="ss-overview-list">
+            <li>
+              Klik ikon <strong>Sumbang Saran</strong> di halaman utama, <em>atau</em>
+              pilih menu <strong>Input Data → Sumbang Saran</strong> di sidebar.
+            </li>
+            <li>
+              Sebelum membuat SS, <strong>bacalah terlebih dahulu “Aturan dalam
+              Membuat Sumbang Saran”</strong> pada panel informasi di bagian atas.
+            </li>
+            <li>
+              Untuk mulai mengisi ide, klik tombol <strong>+ Input SS</strong>.
+            </li>
+          </ul>
+
+          <p class="ss-desc">
+            Pastikan kamu sudah paham aturan dan kriteria SS agar ide yang diajukan
+            langsung tepat sasaran dan mudah diproses oleh superior. 💡
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================
+       INPUT DETAIL PENGUSUL
+    ================================ -->
+    <section class="content ss-input-detail" id="input-ss-detail">
+      <h2 class="ss-title">Input Data Pengusul</h2>
+
+      <div class="ss-detail-grid">
+        <!-- kiri -->
+        <div class="ss-detail-form" aria-hidden="true">
+          <img src="GAMBAR1.png" alt="Contoh form identitas Sumbang Saran" />
+        </div>
+
+        <!-- kanan -->
+        <article class="ss-detail-text">
+          <ul class="ss-detail-list">
+            <li>
+              <strong>Nama</strong> dan <strong>Departemen</strong> otomatis muncul
+              <strong>sesuai dengan Data HR</strong>.
+            </li>
+            <li>
+              Silakan pilih <strong>Lokasi Kerja</strong> masing-masing.
+            </li>
+            <li>
+              Untuk area pabrik, pilih <strong>Area Kerja</strong> yang sesuai (misalnya Jatake 1, Jatake 2, dst.).</li>
+            <li>
+              Pilih <strong>Posisi</strong> sesuai dengan bagian masing-masing.
+            </li>
+            <li>
+              Pilih <strong>Jenis Sumbang Saran</strong> yang akan diajukan, menyesuaikan dengan
+              kategori ide yang dibuat (K3, produktivitas, biaya, kualitas, dll.).
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================
+       INPUT JENIS SS
+    ================================ -->
+    <section class="content ss-jenis">
+      <h2 class="ss-title">Input Jenis Sumbang Saran</h2>
+
+      <div class="ss-jenis-grid">
+        <!-- kiri -->
+        <div class="ss-jenis-card">
+          <div class="ss-jenis-head">
+            Jenis Sumbang Saran yang dapat diajukan yakni:
+          </div>
+
+          <ul class="ss-jenis-list">
+            <li>Keselamatan dan Kesehatan Kerja (K3)</li>
+            <li>Peningkatan Produktivitas</li>
+            <li>Efisiensi Biaya</li>
+            <li>Morale</li>
+            <li>Kualitas Produk</li>
+            <li>Kecepatan Pengiriman</li>
+            <li>Kecepatan Proses (Lead Time)</li>
+            <li>Penerapan 5R</li>
+            <li>Perbaikan Kualitas Lingkungan</li>
+            <li>Peningkatan Pelayanan (Service)</li>
+            <li>Flexibility (Perubahan terhadap kondisi/situasi)</li>
+          </ul>
+        </div>
+
+        <!-- kanan -->
+        <div class="ss-jenis-preview" aria-hidden="true">
+          <img src="GAMBAR3.png"
+               alt="Tampilan dropdown Jenis Sumbang Saran di SIPP">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       INPUT FIELD SS
+    ================================ -->
+    <section class="content ss-input-fields" id="input-ss-fields">
+      <h2 class="ss-title">Input Sumbang Saran</h2>
+
+      <!-- CARD 1: Judul, sebelum, ide, benefit -->
+      <div class="ss-input-layout">
+        <!-- ROW 1: JUDUL -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Judul Sumbang Saran</label>
+            <div class="ss-input-box"></div>
+          </div>
+          <div class="ss-input-right">
+            Silahkan diisi <strong>Judul Sumbang Saran</strong>. Buat judul secara menarik
+            (singkat, padat, jelas) dan menggambarkan inti ide improvement yang diajukan.
+          </div>
+        </div>
+
+        <!-- ROW 2: KEADAAN SEBELUM -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Deskripsikan keadaan sebelumnya (saat ini)</label>
+            <div class="ss-input-box ss-input-box--tall"></div>
+          </div>
+          <div class="ss-input-right">
+            Silahkan deskripsikan <strong>Keadaan Sebelum</strong>, kondisi saat ini di
+            bagian/area yang akan di-improve atau diperbaiki.
+          </div>
+        </div>
+
+        <!-- ROW 3: IDE SS -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Jelaskan ide sumbang saran Anda</label>
+            <div class="ss-input-box ss-input-box--tall"></div>
+          </div>
+          <div class="ss-input-right">
+            Silahkan jelaskan <strong>Ide Sumbang Saran</strong> yang diberikan. Pastikan
+            ide sesuai dengan aturan dan kriteria dalam membuat SS.
+          </div>
+        </div>
+
+        <!-- ROW 4: KEUNTUNGAN -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Jelaskan keuntungan dan atau penghematan biaya dari ide sumbang saran ini</label>
+            <div class="ss-input-box ss-input-box--tall"></div>
+          </div>
+          <div class="ss-input-right">
+            Jelaskan <strong>Keuntungan (manfaat) maupun Penghematan Biaya</strong> dari
+            ide Sumbang Saran. Bagian ini opsional, bila ada sangat baik untuk dicantumkan.
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: Metode, Superior, Telp -->
+      <div class="ss-input-layout ss-input-layout--mt">
+        <!-- Metode Pengerjaan -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Metode Pengerjaan</label>
+            <div class="ss-input-box"></div>
+          </div>
+          <div class="ss-input-right">
+            Silahkan dipilih <strong>Metode Pengerjaan Sumbang Saran</strong>.<br>
+            Plant: <em>Dikerjakan Sendiri, Order ke Workshop, atau Order ke Eksternal.</em>
+          </div>
+        </div>
+
+        <!-- Superior -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Superior</label>
+            <div class="ss-input-box"></div>
+          </div>
+          <div class="ss-input-right">
+            Silahkan dipilih <strong>Nama Superior</strong> sesuai bagian masing-masing.
+          </div>
+        </div>
+
+        <!-- Nomor Telp -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Nomor Telp</label>
+            <div class="ss-input-box"></div>
+          </div>
+          <div class="ss-input-right">
+            Silahkan diisikan <strong>No Telpon</strong> yang dapat dihubungi.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       UPLOAD & SUBMIT
+    ================================ -->
+    <section class="content ss-input-fields" id="input-ss-upload">
+      <h2 class="ss-title">Input Sumbang Saran</h2>
+
+      <div class="ss-input-layout">
+
+        <!-- Upload File -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <label>Upload Foto, Sketsa, Gambar, atau Dokumen (max 2 Mb)</label>
+            <div class="ss-input-box ss-input-upload">
+              <div class="upload-button">Choose Files</div>
+              <span class="upload-text">No file chosen</span>
+            </div>
+          </div>
+
+          <div class="ss-input-right">
+            Silahkan klik <strong>Choose File</strong> untuk mengupload Foto, Gambar,
+            Dokumen, atau Keterangan (File) lainnya yang dapat memberikan gambaran tambahan
+            terkait Ide SS yang diberikan.
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="ss-input-row">
+          <div class="ss-input-left">
+            <div class="submit-btn">Submit SS</div>
+          </div>
+
+          <div class="ss-input-right">
+            Klik <strong>Submit SS</strong> untuk Mengirimkan SS.
+          </div>
+        </div>
+
+        <!-- CATATAN MERAH -->
+        <div class="ss-warning-box">
+          <strong>Catatan :</strong><br>
+          Pastikan Semua Kolom Data sudah Terisi dan Foto, Sketsa, atau Keterangan Tambahan
+          Pendukung Lainnya sudah Terupload. <br><br>
+
+          <strong style="color:#b91c1c;">
+            Jika ada bagian Kolom Data yang tidak terisi atau tidak mengupload Gambar/Lampiran,
+            Maka Sumbang Saran tidak dapat ter Submit.
+          </strong>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================
+       SUBMIT SUKSES
+    ================================ -->
+    <section class="content ss-submit-success" id="ss-submit">
+
+      <h2 class="ss-title">Input Sumbang Saran</h2>
+
+      <div class="ss-submit-grid">
+
+        <!-- KIRI -->
+        <div class="ss-submit-info">
+          Bila sudah ada keterangan seperti gambar di samping,<br>
+          berarti SS telah <strong>Berhasil di Submit</strong>.
+        </div>
+
+        <!-- KANAN -->
+        <div class="ss-submit-preview">
+          <img src="GAMBAR4.png" alt="SS Berhasil di Submit">
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================================
+       REVIEW STATUS
+    ================================ -->
+    <section class="content ss-status" id="review-status-2">
+      <h2 class="ss-title">Review Status Sumbang Saran</h2>
+
+      <div class="ss-status-grid">
+        <!-- kiri -->
+        <div class="ss-status-img" aria-hidden="true">
+          <img src="GAMBAR5.png"
+               alt="Tampilan Review Status Sumbang Saran" />
+        </div>
+
+        <!-- kanan -->
+        <article class="ss-status-text">
+
+          <div class="ss-status-card">
+            Teman-teman Paragonian dapat melihat SS yang sudah disubmit dan juga
+            SS yang sudah diberikan status oleh superior masing-masing pada bagian
+            <strong>List Sumbang Saran</strong> di homepage SS.
+          </div>
+
+          <div class="ss-status-card">
+            <p class="ss-status-card-title">Pastikan untuk selalu mengecek status SS:</p>
+            <ul class="ss-status-bullets">
+              <li>
+                <strong></strong> → Lanjutkan ke tahap implementasi dan
+                pembuatan laporan SS.
+              </li>
+              <li>
+                <strong></strong> → SS perlu dikonfirmasi
+                lanjutan dengan superior, perhatikan feedback / komentar superior.
+              </li>
+              <li>
+                <strong></strong> → Tetap semangat dan berikan ide SS
+                improvement lainnya 😊
+              </li>
+            </ul>
+          </div>
+
+          <div class="ss-status-card">
+            Baca dan perhatikan <strong>feedback maupun komentar</strong> yang diberikan
+            superior pada kolom komentar.
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================
+       TIPS & TRIK SUMBANG SARAN
+    ================================ -->
+    <section class="content ss-tips" id="tips-ss">
+      <h2 class="ss-title">Tips &amp; Trik Sumbang Saran</h2>
+
+      <!-- BARIS 1: METODE IAS -->
+      <div class="ss-tips-ias-card">
+        <div class="ss-tips-badge">Gunakan Metode</div>
+
+        <div class="ss-ias-grid">
+          <!-- I -->
+          <article class="ss-ias-step">
+            <div class="ss-ias-icon">I</div>
+            <div class="ss-ias-body">
+              <h3>Identifikasi Masalah</h3>
+              <p>
+                Melakukan identifikasi di area kerja untuk menemukan proses yang tidak sesuai,
+                pemborosan (downtime) atau proses yang menghambat pencapaian Big Q.
+              </p>
+            </div>
+          </article>
+
+          <!-- A -->
+          <article class="ss-ias-step">
+            <div class="ss-ias-icon">A</div>
+            <div class="ss-ias-body">
+              <h3>Analisa Sebab</h3>
+              <p>
+                Melakukan analisa untuk mengetahui penyebab dari ketidaksesuaian tersebut serta
+                faktor apa saja yang memicunya.
+              </p>
+            </div>
+          </article>
+
+          <!-- S -->
+          <article class="ss-ias-step">
+            <div class="ss-ias-icon">S</div>
+            <div class="ss-ias-body">
+              <h3>Solusi</h3>
+              <p>
+                Menuliskan solusi untuk mengatasi penyebab masalah dan submit pada Sumbang Saran.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- BARIS 2: CONTOH DOWNTIME / BIG Q -->
+      <div class="ss-tips-example">
+        <h3 class="ss-tips-subtitle">Contoh Penerapan Metode IAS</h3>
+
+        <div class="ss-tips-example-grid">
+          <!-- kiri -->
+          <div class="ss-example-left">
+            <div class="ss-example-photo">
+              <img src="GAMBAR6.png" alt="Contoh barang reject di conveyor">
+            </div>
+
+            <div class="ss-example-ias">
+              <p><strong>Identifikasi Masalah:</strong> Barang reject akibat terjatuh dari conveyor.</p>
+              <p><strong>Analisa Sebab:</strong> Penumpukan barang pada conveyor menyebabkan barang terdorong keluar dan terjatuh.</p>
+              <p><strong>Solusi:</strong> Membuat alat penahan atau guide pada sisi conveyor.</p>
+            </div>
+          </div>
+
+          <!-- kanan -->
+          <div class="ss-example-right">
+            <div class="ss-example-tags">
+              <div class="ss-tag-aspek">
+                <span class="tag-title">Aspek Downtime</span>
+                <span class="tag-caption">Defect</span>
+                <ul>
+                  <li>Produk yang dihasilkan cacat karena packaging sering berjatuhan.</li>
+                </ul>
+              </div>
+
+              <div class="ss-tag-aspek">
+                <span class="tag-title">Aspek Big Q</span>
+                <span class="tag-caption">Quality &amp; Cost</span>
+                <ul>
+                  <li>Kualitas produk tidak sesuai standar.</li>
+                  <li>Packaging yang pecah dan tergores tidak bisa digunakan.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="ss-example-note">
+              Contoh ini bisa dijadikan referensi untuk menghubungkan
+              <strong>Identifikasi Masalah – Analisa Sebab – Solusi</strong>
+              dalam satu alur cerita improvement.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BARIS 3: CARA SUBMIT BERDASARKAN SOLUSI -->
+      <div class="ss-tips-submit">
+        <h3 class="ss-tips-subtitle">Cara Submit SS Berdasarkan Alternatif Solusi</h3>
+
+        <div class="ss-tips-submit-grid">
+          <div class="ss-submit-item">
+            <h4>Jenis SS</h4>
+            <p>
+              Pilih kategori yang paling sesuai dengan solusi, misal:
+              <strong>Kualitas Produk</strong> atau <strong>Kecepatan Proses</strong>.
+            </p>
+          </div>
+
+          <div class="ss-submit-item">
+            <h4>Keadaan Sebelum</h4>
+            <p>
+              Jelaskan kondisi awal, misalnya:
+              <em>barang reject akibat terjatuh dari conveyor sehingga produk rusak</em>.
+            </p>
+          </div>
+
+          <div class="ss-submit-item">
+            <h4>Judul SS</h4>
+            <p>
+              Buat judul singkat dan jelas yang menggambarkan solusi, misal:
+              <strong>Pembuatan Guide Penahan Produk di Conveyor</strong>.
+            </p>
+          </div>
+
+          <div class="ss-submit-item">
+            <h4>Deskripsi Improvement</h4>
+            <p>
+              Jelaskan langkah pembuatan alat bantu / perubahan proses yang dilakukan,
+              termasuk material dan cara pemasangan singkat.
+            </p>
+          </div>
+
+          <div class="ss-submit-item">
+            <h4>Keuntungan / Manfaat</h4>
+            <p>
+              Tuliskan penurunan reject, peningkatan efisiensi, penghematan biaya,
+              dan dampak positif lain yang dirasakan setelah solusi diterapkan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS global (navbar, dsb) -->
+  <script src="script.js" defer></script>
+</body>
+</html>

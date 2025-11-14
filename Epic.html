@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Program EPIC</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Global & EPIC style -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-epic.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar mini-nav" role="navigation" aria-label="Navigasi utama">
+    <button
+      class="logo"
+      type="button"
+      onclick="window.location.href='index.html'"
+      aria-label="Kembali ke Dashboard"
+    >
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+      <span>Dashboard</span>
+    </button>
+
+    <ul class="nav-links" id="mainNav">
+      <li>
+        <a href="index.html#kontak">
+          <i class="fa-solid fa-address-book"></i>
+          Kontak
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Buka menu"
+      aria-controls="mainNav"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <!-- HERO EPIC -->
+  <section class="epic-hero" aria-labelledby="epic-hero-title">
+    <h1 id="epic-hero-title">PROGRAM EPIC</h1>
+    <p class="epic-hero-sub">
+      Karena bagi kami, bekerja adalah ruang belajar, dan belajar adalah bagian dari bekerja.
+    </p>
+  </section>
+
+  <main>
+    <!-- APA ITU EPIC -->
+    <section class="content epic" aria-labelledby="epic-apa-title">
+      <h2 class="epic-h2" id="epic-apa-title">Apa itu EPIC?</h2>
+      <div class="epic-intro">
+        <p>
+          <strong>EPIC</strong> adalah sebuah platform online learning yang diluncurkan oleh
+          Paragon University untuk membantu mengakomodasi kebutuhan rekan-rekan Paragonian
+          dalam hal pembelajaran terkait tugas sehari-hari.
+        </p>
+      </div>
+    </section>
+
+    <!-- CARA AKSES EPIC -->
+    <section class="epic-wrap" aria-labelledby="epic-title">
+      <section class="epic-card">
+        <!-- ilustrasi kiri -->
+        <div class="epic-illustration" aria-hidden="true">
+          <img
+            src="Komputer1.png"
+            alt=""
+            onerror="this.style.display='none'; this.parentElement.classList.add('fallback');"
+          />
+        </div>
+
+        <!-- konten -->
+        <div class="epic-content">
+          <h1 id="epic-title">
+            Bagaimana cara akses <br />
+            <span>EPIC?</span>
+          </h1>
+
+          <p class="epic-sub">Buka Google Chrome kemudian kunjungi</p>
+
+          <!-- kata “Search” -->
+          <div class="epic-search-word" aria-hidden="true">
+            <span class="g-r">S</span><span class="g-b">e</span><span class="g-y">a</span
+            ><span class="g-r2">r</span><span class="g-g">c</span><span class="g-b2">h</span>
+          </div>
+
+          <!-- address bar -->
+          <div class="epic-address" role="group" aria-label="Alamat situs EPIC">
+            <span class="addr-text">elearning.paragon-innovation.com</span>
+            <button type="button" class="addr-btn" aria-label="Cari">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <p class="epic-note">
+            Login menggunakan email dan password yang sudah dibuatkan.
+          </p>
+
+          <!-- contoh kredensial -->
+          <div class="epic-cred" aria-label="Contoh kredensial">
+            <div class="cred-row">
+              <span class="cred-label">Username</span>
+              <span class="cred-sep">:</span>
+              <span class="cred-value"><strong>email pribadi</strong></span>
+            </div>
+            <div class="cred-row">
+              <span class="cred-label">Password</span>
+              <span class="cred-sep">:</span>
+              <span class="cred-value">
+                <strong>060699 (DD/MM/YY) – tahun 2 angka belakang</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- aksen -->
+        <div class="epic-sparkle" aria-hidden="true">✦</div>
+        <div class="epic-sparkle s2" aria-hidden="true">✦</div>
+      </section>
+    </section>
+
+    <!-- KAPAN WAKTU MENGAKSES EPIC -->
+    <section class="content epic-anytime" aria-labelledby="anytime-title">
+      <div class="anytime-head">
+        <div class="anytime-clock" aria-hidden="true">
+          <i class="fa-regular fa-clock"></i>
+          <span>24/7</span>
+        </div>
+        <div class="anytime-title-wrap">
+          <h2 id="anytime-title">
+            Kapan waktu mengakses <span>EPIC</span>?
+          </h2>
+          <p class="anytime-sub">
+            TIDAK ADA batasan tempat dan waktu untuk mengakses EPIC. Bisa dikerjakan di mana
+            pun dan kapan pun.
+          </p>
+        </div>
+      </div>
+
+      <div class="anytime-cards">
+        <article class="any-card">
+          <div class="any-illust"><i class="fa-solid fa-house-chimney"></i></div>
+          <h3>Saat di rumah</h3>
+        </article>
+
+        <article class="any-card">
+          <div class="any-illust"><i class="fa-solid fa-earth-asia"></i></div>
+          <h3>Saat liburan</h3>
+        </article>
+
+        <article class="any-card">
+          <div class="any-illust"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Saat di tempat kerja</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- COURSE WAJIB -->
+    <section class="content epic-course" aria-labelledby="epic-course-title">
+      <h2 id="epic-course-title">COURSE WAJIB YANG HARUS DISELESAIKAN</h2>
+
+      <div class="course-banner" aria-hidden="true">
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+
+      <div class="course-list" role="list">
+        <ul>
+          <li>Safety Riding / Keselamatan Berkendara</li>
+          <li>HR Services (Plant) / Layanan SDM (Pabrik)</li>
+          <li>Sistem Jaminan Halal</li>
+          <li>Sistem Manajemen Terintegrasi</li>
+          <li>Quality Awareness / Kesadaran Kualitas</li>
+        </ul>
+        <ul>
+          <li>Industrial Relation / Hubungan Industrial</li>
+          <li>Product Knowledge / Pengetahuan Produk</li>
+          <li>Digital Mindset / Pola Pikir Digital</li>
+          <li>Lean Manufacturing / Pengantar Lean Manufacturing</li>
+          <li>CPPKRTB (Cara pembuatan perbekalan kesehatan rumah tangga yang baik)</li>
+        </ul>
+      </div>
+
+      <hr class="epic-divider" />
+      <p class="epic-foot">Paragon Technology and Innovation – MCS</p>
+    </section>
+
+    <!-- TUTORIAL EPIC -->
+    <section class="content epic-tutorial" aria-labelledby="epic-tutorial-title">
+      <h2 id="epic-tutorial-title">Tutorial Mengeksplor Akun EPIC</h2>
+
+      <div class="tutorial-wrap">
+        <!-- ilustrasi kiri -->
+        <div class="tutorial-img">
+          <img src="Hero.png" alt="Tutorial akun EPIC" />
+        </div>
+
+        <!-- daftar link kanan -->
+        <div class="tutorial-list">
+          <div class="tutorial-item pink">
+            <p>
+              Cara login dan ubah password<br />
+              <a href="https://bit.ly/tutorialepic1" target="_blank" rel="noopener">
+                bit.ly/tutorialepic1
+              </a>
+            </p>
+          </div>
+
+          <div class="tutorial-item rose">
+            <p>
+              Cara daftar ke pembelajaran<br />
+              <a href="https://bit.ly/tutorialepic2" target="_blank" rel="noopener">
+                bit.ly/tutorialepic2
+              </a>
+            </p>
+          </div>
+
+          <div class="tutorial-item purple">
+            <p>
+              Cara mengakses pembelajaran (course)<br />
+              <a href="https://bit.ly/tutorialepic3" target="_blank" rel="noopener">
+                bit.ly/tutorialepic3
+              </a>
+            </p>
+          </div>
+
+          <div class="tutorial-item blue">
+            <p>
+              Cara melihat progress pembelajaran<br />
+              <a href="https://bit.ly/tutorialEPIC4" target="_blank" rel="noopener">
+                bit.ly/tutorialEPIC4
+              </a>
+            </p>
+          </div>
+
+          <div class="tutorial-item sky">
+            <p>
+              Cara mengubah profil dan melihat nilai pembelajaran keseluruhan<br />
+              <a href="https://bit.ly/tutorialepic5" target="_blank" rel="noopener">
+                bit.ly/tutorialepic5
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="epic-divider" />
+      <p class="epic-foot">Paragon Technology and Innovation – MCS</p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

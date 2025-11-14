@@ -1,0 +1,489 @@
+/* ========================================
+   STYLE KHUSUS HALAMAN 5R
+======================================== */
+
+/* ===== Global khusus halaman 5R ===== */
+body {
+  background: #ffffff;
+  color: #2f2f2f;
+}
+
+/* ===== HERO 5R (override dari .hero global) ===== */
+.hero-5r {
+  background: url("BG5R.png") center/cover no-repeat;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+
+.hero-5r .hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #fbbf24; /* kuning keemasan lebih terang */
+  text-shadow:
+    0 0 4px rgba(0, 0, 0, 0.25),
+    0 4px 10px rgba(0, 0, 0, 0.35); /* bikin efek timbul */
+}
+
+
+.hero-5r .hero-subtitle,
+.hero-5r p {
+  max-width: 720px;
+  margin-top: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fffaf0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== WRAPPER KONTEN ===== */
+.content {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto 60px;
+}
+
+/* ===== Judul Section ===== */
+.content h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #ca8a04;
+  border-left: none; /* override style.css */
+  padding-left: 0;
+}
+
+.content h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #facc15, #f97316);
+  margin: 10px auto 0;
+}
+
+/* ===== LIST LANGKAH 5R ===== */
+.page-5r-text {
+  display: flex;
+  justify-content: center;
+}
+
+.page-5r-text ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 750px;
+}
+
+.page-5r-text ol li {
+  background: #fff8e1;
+  padding: 14px 20px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.page-5r-text ol li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+/* ===== DOKUMENTASI 5R ===== */
+.page-5r-media {
+  margin-top: 32px;
+  padding: 18px 18px 22px;
+  border-radius: 18px;
+  background: #fffbeb;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.page-5r-media h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #b45309;
+  margin-bottom: 12px;
+}
+
+.page-5r-img {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: 14px;
+  border: 4px solid #facc15;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.page-5r-media p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #92400e;
+}
+
+/* ===== Animasi Fade-in Up (kalau mau dipakai) ===== */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Video YouTube / Iframe Generic ===== */
+.page-5r-video {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.page-5r-video h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #b45309;
+  margin-bottom: 16px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 16px;
+}
+
+/* ===== Sub Judul Oranye (5R) ===== */
+.p5r-h2 {
+  color: #b45309;
+  border-bottom: 4px solid #facc15;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* ===== SUBMIT 5R – TOMBOL CEPAT ===== */
+.p5r-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0 26px;
+}
+
+.p5r-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.p5r-btn i {
+  font-size: 1.05rem;
+}
+
+.p5r-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  filter: brightness(1.02);
+}
+
+/* ===== SUBMIT 5R – Dropdown + Iframe ===== */
+.p5r-embed-picker {
+  margin-top: 6px;
+}
+
+.p5r-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #b45309;
+}
+
+.p5r-select {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid #facc15;
+  background: #fffbeb;
+  font-weight: 600;
+  color: #7c2d12;
+  margin-bottom: 14px;
+}
+
+.p5r-iframe-wrap {
+  margin-bottom: 10px;
+}
+
+/* ===== Sticky Bar (Compact) ===== */
+.sheet-sticky {
+  position: sticky;
+  top: 52px; /* sesuaikan tinggi navbar */
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #fffbe8;
+  border: 1.5px solid #facc15;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 8px;
+}
+
+.sticky-left {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.sticky-mid {
+  text-align: center;
+  line-height: 1.1;
+}
+
+.sticky-right {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+/* Badge status (klik-able) */
+.badge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.badge-sudah {
+  background: #67fff0;
+  color: #063b37;
+}
+
+.badge-belum {
+  background: #ef9ca1;
+  color: #5a0f17;
+}
+
+.badge-btn {
+  cursor: pointer;
+  outline: none;
+}
+
+.badge-btn:active {
+  transform: translateY(1px);
+}
+
+.badge-count {
+  font-size: 0.75em;
+  font-weight: 800;
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.08);
+  color: #1f2937;
+}
+
+/* Teks tengah & kanan */
+#p5r-week {
+  font-size: 0.95rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+#p5r-date {
+  font-size: 0.8rem;
+  color: #7c2d12;
+}
+
+.trend-label {
+  font-size: 0.75rem;
+  color: #7c2d12;
+}
+
+.trend-last {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.trend-score {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* ===== SUBMIT 5R – Embed Semua (opsional) ===== */
+.p5r-accordion {
+  margin-top: 18px;
+  background: #fffbeb;
+  border-radius: 14px;
+  padding: 12px 14px;
+  border: 1px solid #fde68a;
+}
+
+.p5r-accordion summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #92400e;
+}
+
+.p5r-embed-all {
+  margin-top: 12px;
+}
+
+.p5r-embed-all h4 {
+  margin: 18px 0 8px;
+  color: #b45309;
+  font-weight: 800;
+}
+
+/* ===== Rekap Sheet (Embed) ===== */
+.page-5r-recap .p5r-note {
+  margin: 6px 0 12px;
+  font-size: 0.92rem;
+  color: #7c2d12;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.sheet-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  border: 4px solid #facc15;
+  background: #fff;
+}
+
+.sheet-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .p5r-form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-5r {
+    padding: 70px 16px 40px;
+  }
+
+  .hero-5r .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-5r .hero-subtitle,
+  .hero-5r p {
+    font-size: 1rem;
+  }
+
+  .page-5r-text ol li {
+    padding: 12px 14px;
+  }
+
+  .sheet-wrapper {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 720px) {
+  .sheet-sticky {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 5px 8px;
+  }
+
+  .sticky-left,
+  .sticky-right {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+  }
+
+  #p5r-week {
+    font-size: 0.85rem;
+  }
+
+  #p5r-date {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .p5r-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sheet-wrapper {
+    min-height: 460px;
+  }
+}
+
+/* ===== GLOBAL MOBILE FIX (≤ 480px) ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .content,
+  .content.epic {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  /* Biar card nggak mepet pinggir */
+  .card,
+  section.content > div {
+    border-radius: 14px;
+  }
+}
